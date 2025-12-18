@@ -1,0 +1,664 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    /* height: 100vh; */
+    background: linear-gradient(
+  to right,
+  #474747 0%,
+  #222222 45%
+);
+
+position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+  padding: 0.5rem;
+
+      position: relative;
+    z-index: 10;
+}
+
+.logo{
+    /* border: 1px solid white; */
+    font-size: 2rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.navitems ul{
+    display: flex;
+    gap: 38px;
+  /* margin-right: 26rem; */
+}
+.navitems ul li{
+    list-style-type: none;
+}
+.navitems ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+}
+.navitems ul li a.active{
+    background-color: #474747;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 2px;
+
+}
+.navitems ul li:hover{
+        background-color: #474747;
+        display: inline-block;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+/* navigation works ends */
+.botom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.imge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 27%;
+    z-index: 1;
+}
+
+.imge img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.content{
+    max-width: 70%;
+    text-align: left;
+    padding: 2rem 1rem;
+}
+
+.content h1{
+    font-family: sans-serif;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: start;
+    font-size: 2.4rem;
+
+}
+.content p{
+    font-family: sans-serif;
+    color: white;
+    padding: 1rem 2rem;
+    color: #C4C4C4;
+    text-align: start;
+}
+
+.btn button{
+    background-color: #0A72AD;
+    padding: 1rem 2.2rem;
+    border: none;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.plus{
+    font-size: 3rem;
+    color: #0A72AD;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.hpclient h4{
+    font-family: sans-serif;
+    color: #C4C4C4;
+    font-size: 1.3rem;
+} 
+.hpclient .num{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.hamburger{
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 20;
+    position: absolute;
+    right: 40px;
+}
+
+/* header sectio completed */
+/* company section */
+.company{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    padding: 4rem 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.com{
+max-width: 200px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.com .img{
+    width: 100%;
+
+}
+
+/* company section */
+
+/* services section */
+.services{
+    width: 100%;
+    height: auto;
+    background: white;
+display: flex;
+align-items: center;
+flex-direction: column;
+    
+}
+
+.services-content{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 500px;
+    font-family: sans-serif;
+    padding: 2rem;
+
+}
+
+.services-content p{
+    color: #474747;
+}
+
+.services-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+    max-width: 30%;
+}
+
+
+.exclence{
+    padding: 1rem;
+}
+.exclence img:hover{
+transform: scale(1.04);
+transition: all 1s ease;
+}
+.exclence h3{
+    font-family: sans-serif;
+    line-height: 1.9rem;
+
+}
+
+.exclence p{
+    font-family: sans-serif;
+    color: #474747;
+    line-height: 1.5rem;
+}
+
+/* make us section */
+.make{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.make-content{
+display: flex;
+padding: 2rem;
+gap: 500px;
+
+}
+.make-content h2{
+font-family: sans-serif;
+
+}
+.make-content p{
+    color: #474747;
+    font-family: sans-serif;
+}
+
+.content-icons{
+    display: flex;
+}
+.content-icons .content-card{
+    padding: 2rem 3rem;
+  
+   
+}
+.content-card h4{
+    line-height: 2rem;
+    font-family: sans-serif;
+
+}
+.content-card p{
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+.content-card img:hover{
+transform: rotate(360deg);
+transition: all 0.5s ease;
+}
+
+/* aRTICCTURE SECTION */
+
+.arti{
+    width: 100%;
+    height: auto;
+   padding: 1rem 2rem;
+   display: flex;
+   gap: 20px;
+   /* flex-wrap: wrap; */
+
+    
+}
+
+
+
+.first{
+flex-basis: 55%;
+position: relative;
+
+}
+
+.first::before{
+ width: 300px;
+  height: 300px;
+  background-image: url('images/pexels-alesia-kozik-6016680\ 1.svg');
+content: "";
+  position: absolute;
+  top: 30%;
+  left: 56%;
+  z-index: 1000;
+
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.second{
+/* border: 1px solid red; */
+flex-basis: 35%;
+padding: 1rem 1rem;
+margin-top: 2rem;
+
+
+}
+
+.second h1{
+    font-family: sans-serif;
+
+}
+
+.second p{
+    font-family: sans-serif;
+    padding: 1rem;
+    line-height: 1.4rem
+}
+
+.second button{
+    background-color: #0A72AD;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+.second span{
+    font-family: sans-serif;
+    margin-left: 2rem;
+}
+
+/* story section */
+.story{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+}
+
+.story .story-cont{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 40%;
+}
+
+.story-img{
+    max-width: 50%;
+}
+.story-cont h1{
+    font-family: sans-serif;
+}
+
+.story-cont p{
+    font-family: sans-serif;
+    line-height: 1.4rem;
+    padding-bottom: 1rem;
+}
+.story-cont button{
+    background-color: #0A72AD;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+}
+
+.story .story-img{
+width: 100%;
+}
+/* story section */
+
+/* news and update ssection */
+.news{
+    width: 100%;
+    height: auto;
+    /* padding: 1rem; */
+}
+.newss h1{
+    /* border: 1px solid black; */
+    padding: 1rem;
+    font-family: sans-serif;
+    display: inline-block;
+    margin-left: 2rem;
+}
+.flex-news{
+    display: flex;
+    /* border: 2px solid blue; */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem 0rem;
+}
+
+.news-upadate{
+   
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    /* border: 1px solid black; */
+
+
+}
+.news-data p{
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    color: #474747;
+}
+
+.news-date{
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    padding: 1rem;
+    
+}
+
+
+/* news and update ssection */
+
+footer{
+    width: 100%;
+    height: auto;
+   background-color: #222222;
+   color: white;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    font-family: sans-serif;
+   
+}
+footer .links{
+    max-width: 45%;
+    padding: 2rem;
+
+}
+footer .links h2,p{
+    font-family: sans-serif;
+    padding: 1rem;
+
+}
+
+footer .links ul{
+    display: flex;
+    gap: 12px;
+}
+footer .links ul li{
+    list-style: none;
+}
+.more{
+    display: flex;
+   max-width: 50%;
+   gap: 2rem;
+}
+.more div h2{
+    font-family: sans-serif;
+}
+.more div ul li{
+list-style-type: none;
+
+}
+
+i {
+  font-size: 2rem;
+  color: white; /* icon color */
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+i:hover {
+  transform: scale(1.2);
+  color: #0a72ad; /* hover color */
+}
+
+
+
+@media  screen and (max-width:768px) {
+.hamburger{ 
+    display: block;
+} 
+
+    .navitems{
+        display: none;
+    }
+
+
+    .content h1{
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+        font-weight: 100;
+    }
+
+    .btn button{
+        padding:0.7rem 1.8rem;
+        font-size: 1rem;
+    }
+
+    .hpclient .num{
+        font-size: 2.3rem;
+    }
+    .plus{
+        font-size: 1.9rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+        
+    }
+
+    .hpclient h4{
+        font-size: 1rem;
+    }
+
+    .navitems{
+       position: absolute;
+       top: 70px;
+       left: 0px;
+       right: 0px;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       background-color: black;
+       color: white;
+       gap: 18px;
+       padding: 12px; 
+       display: none;
+    }
+
+    .navitems ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navitems ul li{
+        display: inline-block;
+    }
+
+    .navitems.active{
+        display: block;
+    }
+    /* company sec */
+    .company{
+        flex-direction: column;
+        padding: 2rem 2rem;
+        gap: 30px;
+    }
+
+
+    .services-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .make-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .make{
+        /* align-items: center;jus */
+        /* justify-content: center; */
+        padding: 1rem;
+    }
+
+    .content-icons{
+        flex-direction: column;
+    }
+
+    .content-card{
+        padding: 1rem 2rem;
+    }
+
+    .arti{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0.3rem;
+       
+    }
+
+    .second{
+       flex-basis: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-left:3rem;
+    }
+
+    .story{
+        flex-direction: column;
+        text-align: center;
+        /* margin-left: 2rem; */
+    }
+    .story-cont{
+        max-width: 100%;
+    }
+
+    .story-img {
+       max-width: 100%;
+    }
+    .story-img img{
+        max-width: 80%;
+    }
+
+    .first::before{
+        display: none;
+    }
+ .booking img{
+    max-width: 100%;
+ }
+  
+
+    .flex-news{
+        flex-direction: column;
+        /* align-items: center; */
+  
+        /* width: 100%; */
+    }
+    .news-upadate{
+        max-width: 100%;
+        padding: 1rem;
+
+    }
+
+ 
+footer{
+    flex-direction: column;
+}
+
+footer .links{
+    max-width: 100%;
+}
+}
